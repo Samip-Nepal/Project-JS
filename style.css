@@ -16,7 +16,7 @@ body{
 
 .game{
     height: 70vh;
-    padding-top:3%;
+    padding-top:2%;
     gap: 1.5vmin;
     display: flex;
     justify-content: center;
@@ -55,5 +55,31 @@ body{
     border: none;
     width: 7em;
     height: 2em;
+}
+#msg{
+  font-size: 4em;
+  color: yellow;
+  
+}
+.new-msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    flex-direction: column;
+    height: 100vmin;
+} 
+#new-game{
+    background-color:rgb(121, 2, 2);
+    border-radius:3mm ;
+    border: none;
+    width: 8em;
+    height: 3em;
+    color: white;
+    display: block;
+    margin-top:1em ;
+}
+.hide{
+    display: none;
 }
 
