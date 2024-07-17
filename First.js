@@ -1,7 +1,6 @@
 let game2=document.querySelectorAll(".game-2");//acess play button
 let game3=document.querySelectorAll("#reset");//acess to game-2
-console.log(game2);
-console.log(game3);
+
  let turn0 =true;//one player turn
 
  const winrate=[
@@ -36,8 +35,19 @@ turn0=false;
             
             }
                 game.disabled = true;
+                checkwinner();
         });
      });
-    
+    const checkwinner = () => {
+for(pattern of winrate){
+   let pos1=game2[pattern[0]].innerText;
+   let pos2=game2[pattern[1]].innerText;
+   let pos3=game2[pattern[2]].innerText;
+   if(pos1 !==""&& pos2!==""&& pos3!==""){
+      if(pos1==pos2&&pos2==pos3)
+         console.log("winner");
+   }
+}
+    };
 
     

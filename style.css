@@ -16,7 +16,7 @@ body{
 
 .game{
     height: 70vh;
-    padding-top:5%;
+    padding-top:3%;
     gap: 1.5vmin;
     display: flex;
     justify-content: center;
@@ -51,5 +51,9 @@ body{
 #reset{
     background-color:rgb(121, 2, 2);
     color: white;
+    border-radius:3mm ;
+    border: none;
+    width: 7em;
+    height: 2em;
 }
 
